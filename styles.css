@@ -1,66 +1,247 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f8fb;
+    scroll-behavior: smooth;
 }
 
+/* Hero Section */
 .hero-section {
     background: linear-gradient(to right, #5A67D8, #38B2AC);
     color: white;
     text-align: center;
     padding: 50px 20px;
+    animation: fadeIn 1s ease-in-out;
 }
-
 .hero-section .highlight {
     color: #48BB78;
 }
-
 .cta-button {
     display: inline-block;
     background-color: #ff7f50;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    transition: transform 0.3s;
+}
+.cta-button:hover {
+    transform: scale(1.1);
 }
 
+/* About Echowise Section */
+.about-echowise {
+    background: #F4F8FB;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-text h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.company-name {
+    color: #4CBF91;
+    font-weight: bold;
+}
+
+
+/* Services Section */
 .services {
     text-align: center;
-    padding: 40px;
+    padding: 50px;
     background-color: white;
 }
-
 .service-boxes {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     flex-wrap: wrap;
 }
-
 .service-box {
     background: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 250px;
     font-weight: bold;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+.service-box:hover {
+    transform: translateY(-5px);
+}
+.service-box img {
+    width: 40px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+.service-box h3 {
+    margin: 0;
+    font-size: 1.2em;
+    text-align: left;
+}
+.service-box p {
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
 }
 
+
+
+/* LinkedIn Button Section */
+.linkedin-section {
+    text-align: center;
+    padding: 50px;
+    background: #f8f9fa;
+}
+.linkedin-button {
+    display: inline-block;
+    background-color: #0077b5;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+.linkedin-button:hover {
+    transform: scale(1.1);
+}
+
+/* Private Label Product Launch Section */
+.private-label {
+    text-align: center;
+    padding: 50px;
+    background: #eef2f7;
+}
+.private-label-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.private-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+.private-box:hover {
+    transform: scale(1.05);
+}
+
+/* Carousel Section */
+.carousel-section {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+}
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+}
+.carousel {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    width: calc(300px * 12);
+}
+.carousel img {
+    width: 300px;
+    height: auto;
+    margin: 0 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.carousel img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/*additional info section */
+
+.private-label {
+    text-align: center;
+    padding: 60px;
+    background: #eef2f7;
+    animation: fadeInUp 1s ease-in-out;
+}
+.private-label-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.private-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.private-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.private-box h3 {
+    color: #2d3748;
+    margin-bottom: 10px;
+}
+.private-box p {
+    color: #555;
+    font-size: 0.95em;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Contact Section */
 .contact-section {
     background: linear-gradient(to right, #7928CA, #FF0080);
     color: white;
     text-align: center;
     padding: 50px;
 }
-
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 form input, form textarea {
     width: 80%;
     max-width: 400px;
@@ -69,7 +250,6 @@ form input, form textarea {
     border-radius: 5px;
     border: none;
 }
-
 form button {
     background-color: #ff7f50;
     color: white;
@@ -79,6 +259,175 @@ form button {
     cursor: pointer;
 }
 
+/* Retail Service Section */
+.retail-service {
+    background: #222;  /* Dark background */
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+.retail-box {
+    background: #4A90E2; /* Light blue box */
+    color: white;
+    padding: 50px;  /* Increased padding */
+    border-radius: 20px;
+    width: 80%;  /* Increased width */
+    max-width: 1200px; /* Wider max width */
+    text-align: center;
+}
+
+.retail-box h2 {
+    font-size: 30px; /* Slightly larger title */
+    font-weight: bold;
+}
+
+.retail-box p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Why Work With Us Section */
+.why-work-with-us {
+    background: #F8FCFF;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.why-container {
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Left Image Styling */
+.why-image img {
+    width: 500px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Content Section */
+.why-content {
+    flex: 1;
+}
+
+.why-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.why-content .highlight {
+    color: #4CBF91;
+}
+
+/* Styling Each Box */
+.why-box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.why-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Number Styling */
+.why-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4285F4;
+    text-align: center;
+    min-width: 50px;
+}
+
+/* Text Styling */
+.why-text {
+    flex: 1;
+}
+
+.why-text h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.why-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+
+/* Contact Section */
+.contact-section {
+    background: linear-gradient(to right, #7928CA, #FF0080);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 10px;
+}
+
+
+.contact-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: white; /* Ensure title is visible */
+    margin-bottom: 10px;
+}
+
+.contact-subtitle {
+    font-size: 18px;
+    color: #f0f0f0; /* Lighter shade for contrast */
+    margin-bottom: 30px;
+}
+
+form input, form textarea {
+    background: white; /* White background for inputs */
+    color: black;
+    border: none;
+    width: 80%;
+    max-width: 450px;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+form button {
+    background-color: #ff7f50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+
+form button:hover {
+    background-color: #ff5722;
+}
+
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;

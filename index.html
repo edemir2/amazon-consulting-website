@@ -1,41 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amazon Consulting Services</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>    
+    
     <header class="hero-section">
-        <h1>Dominate <span class="highlight">Amazon</span> with a Full-Service Agency That <span class="highlight">Results!</span></h1>
-        <p>Your Partner in Amazon Success – From SEO to Ads, We Handle It All. $300M in Sales and Counting.</p>
+        <h1>
+            <span class="company-name">Echowise</span>: Your Amazon Growth Partner
+        </h1>
+        <p>
+            Helping Brands Dominate Amazon – From SEO to Ads, We Handle It All. 
+            <strong>$300M+ in Sales and Counting.</strong>
+        </p>
         <a href="#contact" class="cta-button">Get Your Free Amazon Audit</a>
     </header>
     
+
     <section class="services">
         <h2>Services We Offer</h2>
+        <p>Everything You Need to Succeed on Amazon, All in One Place</p>
         <div class="service-boxes">
-            <div class="service-box">Amazon Ads Management</div>
-            <div class="service-box">Amazon SEO</div>
-            <div class="service-box">Listing Optimizations</div>
-            <div class="service-box">Amazon Account Management Services</div>
+          <div class="service-box" data-number="01">
+            <img src="icons/ads.png" alt="Amazon Ads Management Icon" />
+            <h3>Amazon Ads Management</h3>
+            <p>Maximize ROI with expertly crafted Amazon PPC campaigns that drive sales.</p>
+          </div>
+          <div class="service-box" data-number="02">
+            <img src="icons/seo.png" alt="Amazon SEO Icon" />
+            <h3>Amazon SEO</h3>
+            <p>Get your products to rank higher with data-driven keyword strategies and optimization.</p>
+          </div>
+          <div class="service-box" data-number="03">
+            <img src="icons/listing.png" alt="Listing Optimization Icon" />
+            <h3>Listing Optimizations</h3>
+            <p>Convert more clicks into customers with compelling, high-converting product pages.</p>
+          </div>
+          <div class="service-box" data-number="04">
+            <img src="icons/account.png" alt="Amazon Account Management Icon" />
+            <h3>Amazon Account Management Services</h3>
+            <p>Streamline operations and eliminate headaches – from inventory to reporting.</p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="about-echowise">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About <span class="company-name">Echowise</span></h2>
+                <p>At Echowise, we help Amazon sellers grow their business with data-driven insights, PPC optimization, 
+                and strategic brand management. Our team ensures that every brand we work with achieves long-term success.</p>
+            </div>
         </div>
     </section>
     
+
+    <section class="linkedin-section">
+      <h2>Connect with Akif Taskiran</h2>
+      <a
+        href="https://www.linkedin.com/in/akiftaskiran/"
+        class="linkedin-button"
+        target="_blank"
+        >Visit Akif Taskiran's LinkedIn</a
+      >
+    </section>
+
+    <section class="carousel-section">
+        <h2>Recent LinkedIn Posts</h2>
+        <div class="carousel-container">
+            <button class="carousel-button left" onclick="moveCarousel(-1)">&#10094;</button>
+            <div class="carousel">
+                <a href="https://www.linkedin.com/posts/akiftaskiran_assuming-youre-responsible-for-managing-activity-7142181653153533952-d0RC?utm_source=share&utm_medium=member_desktop" target="_blank">
+                    <img src="image1.png" alt="LinkedIn Post 1">
+                </a>
+                <a href="https://www.linkedin.com/posts/akiftaskiran_heres-another-advanced-level-secret-activity-7143094619923181568-MwcY?utm_source=share&utm_medium=member_desktop" target="_blank">
+                    <img src="image2.png" alt="LinkedIn Post 2">
+                </a>
+                <a href="https://www.linkedin.com/posts/akiftaskiran_i-am-sharing-something-genuinely-free-without-activity-7144421573544800256-94k1?utm_source=share&utm_medium=member_desktop" target="_blank">
+                    <img src="image3.png" alt="LinkedIn Post 3">
+                </a>
+                <a href="https://www.linkedin.com/posts/akiftaskiran_let-me-to-share-a-secret-with-you-when-activity-7140522921461981184-QykD?utm_source=share&utm_medium=member_desktop" target="_blank">
+                    <img src="image4.png" alt="LinkedIn Post 4">
+                </a>
+                <a href="https://www.linkedin.com/posts/akiftaskiran_if-you-keep-customers-on-your-page-longer-activity-7207834256373395457-cmUX?utm_source=share&utm_medium=member_desktop" target="_blank">
+                    <img src="image5.png" alt="LinkedIn Post 5">
+                </a>
+                <a href="https://www.linkedin.com/posts/akiftaskiran_i-was-planning-to-keep-this-a-secret-but-activity-7205357933243613184-PM0n?utm_source=share&utm_medium=member_desktop" target="_blank">
+                    <img src="image6.png" alt="LinkedIn Post 6">
+                </a>
+            </div>
+            <button class="carousel-button right" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
+    </section>
+    
+
+
+    <section class="private-label">
+        <h2>Private Label Product Launch</h2>
+        <p>Our expert solutions will take your Amazon business to the next level.</p>
+        <div class="private-label-boxes">
+            <div class="private-box">
+                <h3>Competitor Analysis</h3>
+                <p>We analyze your competitors' strengths, weaknesses, and strategies to help you position your products effectively.</p>
+            </div>
+            <div class="private-box">
+                <h3>Creating Listings</h3>
+                <p>We create optimized Amazon product listings to maximize visibility and attract more customers.</p>
+            </div>
+            <div class="private-box">
+                <h3>Main Images</h3>
+                <p>We optimize the main images of your product listings to meet Amazon's quality standards.</p>
+            </div>
+            <div class="private-box">
+                <h3>A+ Content</h3>
+                <p>Enhanced Brand Content (A+ Content) is developed for your listings, including additional images, text placements, and improved marketing content.</p>
+            </div>
+            <div class="private-box">
+                <h3>Brand Store</h3>
+                <p>We set up a branded Amazon Store, providing a dedicated space to showcase your products.</p>
+            </div>
+            <div class="private-box">
+                <h3>Brand Story</h3>
+                <p>We craft compelling brand stories to create a strong connection between your listings and customers.</p>
+            </div>
+            <div class="private-box">
+                <h3>Title + Bullet Points</h3>
+                <p>We optimize product titles and bullet points to highlight key features and benefits.</p>
+            </div>
+            <div class="private-box">
+                <h3>Amazon Post</h3>
+                <p>We create and post 10 engaging Amazon Posts to drive traffic and increase visibility.</p>
+            </div>
+            <div class="private-box">
+                <h3>Shipping Plan (FBA/FBM)</h3>
+                <p>We create shipping plans for Fulfillment by Amazon (FBA) or Fulfillment by Merchant (FBM) for smooth logistics.</p>
+            </div>
+            <div class="private-box">
+                <h3>Coupon & Promotion Creation</h3>
+                <p>We set up coupons and promotions to drive sales and attract new customers, providing a competitive edge on Amazon.</p>
+            </div>
+        </div>
+    </section>
+
+    
+  <section class="retail-service">
+        <div class="retail-box">
+            <h2>Retail As A Service</h2>
+            <p>End-to-end management of your Amazon sales. Better margins, more control. Check out our revolutionary offer.</p>
+        </div>
+    </section>
+    
+    <section class="why-work-with-us">
+        <div class="why-container">
+            <div class="why-image">
+                <img src="why-work.png" alt="Why Work With Us">
+            </div>
+            <div class="why-content">
+                <h2>Why You Should <span class="highlight">Work With Us</span></h2>
+                <div class="why-box">
+                    <span class="why-number">01</span>
+                    <div class="why-text">
+                        <h3>Longevity Focus</h3>
+                        <p>We help you build sustainable Amazon success with expert-driven strategies tailored for long-term growth.</p>
+                    </div>
+                </div>
+                <div class="why-box">
+                    <span class="why-number">02</span>
+                    <div class="why-text">
+                        <h3>No One Too Small or Too Big</h3>
+                        <p>Whether you're just starting or scaling, we deliver the same efficiency and results to all businesses.</p>
+                    </div>
+                </div>
+                <div class="why-box">
+                    <span class="why-number">03</span>
+                    <div class="why-text">
+                        <h3>Quick Wins & Continuous Growth</h3>
+                        <p>We ensure fast improvements while maintaining a focus on long-term optimization for lasting success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
     <section id="contact" class="contact-section">
-        <h2>Contact Us</h2>
-        <form action="https://formspree.io/f/your-email" method="POST">
-            <input type="text" name="name" placeholder="First Name" required>
-            <input type="text" name="last-name" placeholder="Last Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <textarea name="message" placeholder="Your Message"></textarea>
-            <button type="submit">Submit</button>
+        <h2 class="contact-title">Claim Your Free Store Audit</h2>
+        <p class="contact-subtitle">Get expert advice on your Amazon store</p>
+        <form action="https://formspree.io/f/xqaelpno" method="POST">
+            <input type="text" name="name" placeholder="First Name*" required />
+            <input type="text" name="last-name" placeholder="Last Name*" required />
+            <input type="email" name="email" placeholder="Email*" required />
+            <input type="text" name="company" placeholder="Company Name" />
+            <input type="tel" name="phone" placeholder="Phone Number" />
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="submit">Get My Free Audit</button>
         </form>
     </section>
     
+
     <footer>
-        <p>&copy; 2025 Amazon Consulting Services | <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></p>
+        <p>&copy; 2025 <span class="company-name">Echowise</span> | Amazon Growth Experts</p>
     </footer>
-</body>
+    
+
+    <script>
+    const carousel = document.querySelector('.carousel');
+    let isDragging = false;
+    let startX;
+    let scrollLeft;
+
+    function moveCarousel(direction) {
+        const scrollAmount = 350;
+        carousel.scrollBy({
+            left: direction * scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+
+    carousel.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.pageX - carousel.offsetLeft;
+        scrollLeft = carousel.scrollLeft;
+    });
+
+    carousel.addEventListener('mouseleave', () => {
+        isDragging = false;
+    });
+
+    carousel.addEventListener('mouseup', () => {
+        isDragging = false;
+    });
+
+    carousel.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        const x = e.pageX - carousel.offsetLeft;
+        const walk = (x - startX) * 2;
+        carousel.scrollLeft = scrollLeft - walk;
+    });
+
+    function autoScroll() {
+        carousel.scrollBy({
+            left: 1,
+            behavior: 'smooth'
+        });
+        setTimeout(autoScroll, 30);
+    }
+
+    autoScroll();
+</script>
+  </body>
 </html>
