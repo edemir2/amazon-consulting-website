@@ -34,26 +34,34 @@ body {
 
 /* About Echowise Section */
 .about-echowise {
-    background: #F4F8FB;
+    background: linear-gradient(to right, rgba(90, 103, 216, 0.8), rgba(56, 178, 172, 0.8)); 
     padding: 80px 0;
     text-align: center;
+    color: white; /* Improves text readability */
 }
 
 .about-container {
     max-width: 800px;
     margin: auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3); /* Adds a slight overlay */
+    border-radius: 10px;
 }
 
 .about-text h2 {
     font-size: 34px;
     font-weight: bold;
     margin-bottom: 20px;
+    color: #fff; /* Ensure heading is visible */
 }
 
-.company-name {
-    color: #4CBF91;
-    font-weight: bold;
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #f8f8f8; /* Light text for better contrast */
 }
+
+
 
 
 /* Services Section */
@@ -106,6 +114,13 @@ body {
     padding: 50px;
     background: #f8f9fa;
 }
+
+.linkedin-section h2 {
+    color: #222222; /* Dark gray text for readability */
+    font-size: 26px;
+    font-weight: bold;
+}
+
 .linkedin-button {
     display: inline-block;
     background-color: #0077b5;
@@ -117,16 +132,31 @@ body {
     font-weight: bold;
     transition: transform 0.3s;
 }
+
 .linkedin-button:hover {
     transform: scale(1.1);
 }
+
 
 /* Private Label Product Launch Section */
 .private-label {
     text-align: center;
     padding: 50px;
-    background: #eef2f7;
+    background: #eef2f7; /* Light background */
 }
+
+.private-label h2 {
+    color: #222222; /* Darker text for visibility */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.private-label p {
+    color: #333333; /* Dark gray for readability */
+    font-size: 18px;
+    line-height: 1.5;
+}
+
 .private-label-boxes {
     display: flex;
     flex-wrap: wrap;
@@ -433,4 +463,138 @@ footer {
     padding: 20px;
     background-color: #333;
     color: white;
+}
+
+/* 🔹 Responsive Styles for Mobile Screens */
+@media (max-width: 768px) {
+    /* Adjust body padding and font size */
+    body {
+        font-size: 14px;
+    }
+
+    /* Hero Section - Reduce padding for smaller screens */
+    .hero-section {
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    /* Stack service boxes vertically */
+    .service-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 90%;
+        text-align: center;
+    }
+
+    /* Make carousel images adapt to smaller screens */
+    .carousel img {
+        width: 250px;
+        height: auto;
+    }
+
+    .carousel-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    /* Make Private Label Product Launch section stack items */
+    .private-label-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .private-box {
+        width: 90%;
+        text-align: center;
+    }
+
+    /* Adjust Why Work With Us section for smaller screens */
+    .why-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .why-image img {
+        width: 90%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    /* Ensure the contact form fits smaller screens */
+    .contact-section form input,
+    .contact-section form textarea {
+        width: 90%;
+    }
+
+    /* Adjust retail service section */
+    .retail-box {
+        width: 90%;
+        padding: 30px;
+    }
+}
+/* 🔹 Navbar Styles */
+.navbar {
+    background: #222;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* 🔹 Mobile Menu */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* 🔹 Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
 }

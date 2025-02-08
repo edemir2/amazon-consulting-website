@@ -8,6 +8,20 @@
   </head>
   <body>    
     
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Echowise</a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links">
+                <li><a href="#about">Who We Are</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#linkedin">LinkedIn</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
     <header class="hero-section">
         <h1>
             <span class="company-name">Echowise</span>: Your Amazon Growth Partner
@@ -19,7 +33,13 @@
         <a href="#contact" class="cta-button">Get Your Free Amazon Audit</a>
     </header>
     
+   
+   
+   
+    
 
+
+    <section id="services" class="services">
     <section class="services">
         <h2>Services We Offer</h2>
         <p>Everything You Need to Succeed on Amazon, All in One Place</p>
@@ -46,7 +66,8 @@
           </div>
         </div>
       </section>
-      
+
+      <section id="about" class="about-echowise">
       <section class="about-echowise">
         <div class="about-container">
             <div class="about-text">
@@ -57,7 +78,7 @@
         </div>
     </section>
     
-
+    <section id="linkedin" class="linkedin-section">
     <section class="linkedin-section">
       <h2>Connect with Akif Taskiran</h2>
       <a
@@ -186,7 +207,6 @@
     </section>
     
     
-
     <section id="contact" class="contact-section">
         <h2 class="contact-title">Claim Your Free Store Audit</h2>
         <p class="contact-subtitle">Get expert advice on your Amazon store</p>
@@ -253,5 +273,14 @@
 
     autoScroll();
 </script>
+
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("active");
+    }
+    </script>
+
+
   </body>
 </html>
