@@ -468,51 +468,30 @@ footer {
 
 /* 🔹 Responsive Styles for Mobile Screens */
 @media (max-width: 768px) {
-    /* Adjust body padding and font size */
     body {
-        font-size: 14px;
+        font-size: 14px; /* Reduce overall font size */
     }
 
-    /* Hero Section - Reduce padding for smaller screens */
     .hero-section {
-        padding: 30px 15px;
+        padding: 25px 10px; /* Reduce padding */
         text-align: center;
     }
 
-    /* Stack service boxes vertically */
-    .service-boxes {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service-box {
-        width: 90%;
-        text-align: center;
-    }
-
-    /* Make carousel images adapt to smaller screens */
-    .carousel img {
-        width: 250px;
-        height: auto;
-    }
-
-    .carousel-container {
-        width: 100%;
-        overflow-x: auto;
-    }
-
-    /* Make Private Label Product Launch section stack items */
+    /* Private Label Product Launch Section */
     .private-label-boxes {
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-content: center;
     }
 
     .private-box {
         width: 90%;
         text-align: center;
+        padding: 12px;
     }
 
-    /* Adjust Why Work With Us section for smaller screens */
+    /* Adjust "Why Work With Us" section */
     .why-container {
         flex-direction: column;
         text-align: center;
@@ -520,22 +499,32 @@ footer {
 
     .why-image img {
         width: 90%;
-        max-width: 400px;
-        margin-bottom: 20px;
+        max-width: 280px;
+        margin-bottom: 10px;
     }
 
-    /* Ensure the contact form fits smaller screens */
+    /* Contact Section */
     .contact-section form input,
     .contact-section form textarea {
-        width: 90%;
+        width: 95%;
     }
 
-    /* Adjust retail service section */
+    /* Reduce button sizes */
+    .cta-button, 
+    .linkedin-button, 
+    form button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    /* Retail Service Section */
     .retail-box {
         width: 90%;
-        padding: 30px;
+        padding: 20px;
     }
 }
+
+
 /* 🔹 Navbar Styles */
 .navbar {
     background: linear-gradient(to right, #1a1a1a, #333); /* Dark gradient for a sleek look */
