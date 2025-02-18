@@ -468,61 +468,90 @@ footer {
 
 /* 🔹 Responsive Styles for Mobile Screens */
 @media (max-width: 768px) {
+    /* General text and spacing updates */
     body {
-        font-size: 14px; /* Reduce overall font size */
+        font-size: 16px; /* Increased overall font size for readability */
     }
 
-    .hero-section {
-        padding: 25px 10px; /* Reduce padding */
-        text-align: center;
+    .hero-section, .about-echowise, .linkedin-section, .carousel-section, .contact-section {
+        padding: 60px 30px; /* More padding for a clean, professional look */
     }
 
-    /* Private Label Product Launch Section */
-    .private-label-boxes {
+    /* Service and Private Label boxes - Side by side layout */
+    .service-boxes, .private-label-boxes {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); /* Cards side by side */
+        gap: 20px; /* Increased gap for more space */
     }
 
-    .private-box {
-        width: 90%;
+    .service-box, .private-box {
+        width: 95%; /* Wider boxes for mobile */
+        padding: 20px; /* More padding for breathing space */
         text-align: center;
-        padding: 12px;
     }
 
-    /* Adjust "Why Work With Us" section */
+    .service-box h3, .private-box h3 {
+        font-size: 1.5em; /* Larger heading text */
+    }
+
+    .service-box p, .private-box p {
+        font-size: 1.1em; /* Larger paragraph text */
+    }
+
+    /* Carousel Section - Full width and elegant look */
+    .carousel-container {
+        width: 95%;
+        max-width: none;
+        overflow-x: scroll;
+    }
+
+    .carousel img {
+        width: 90%;
+        border-radius: 15px;
+    }
+
+    /* Contact form section - Full width and balanced look */
+    form input, form textarea {
+        width: 100%;
+        max-width: none;
+        padding: 15px;
+        font-size: 18px; /* Larger input text for better usability */
+    }
+
+    form button {
+        width: 100%;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    /* Retail Service Section - Wider and more professional */
+    .retail-box {
+        width: 95%;
+        padding: 30px;
+    }
+
+    /* Why Work With Us Section - Better spacing and alignment */
     .why-container {
         flex-direction: column;
         text-align: center;
+        gap: 30px; /* More gap between image and text */
     }
 
     .why-image img {
         width: 90%;
-        max-width: 280px;
+        max-width: 320px;
         margin-bottom: 10px;
     }
 
-    /* Contact Section */
-    .contact-section form input,
-    .contact-section form textarea {
-        width: 95%;
-    }
-
-    /* Reduce button sizes */
+    /* Adjust button sizes for better mobile usability */
     .cta-button, 
     .linkedin-button, 
     form button {
-        padding: 8px 15px;
-        font-size: 14px;
-    }
-
-    /* Retail Service Section */
-    .retail-box {
-        width: 90%;
-        padding: 20px;
+        padding: 12px 20px;
+        font-size: 18px;
     }
 }
+
 
 
 /* 🔹 Navbar Styles */
